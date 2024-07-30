@@ -1,0 +1,175 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* header */
+.header-link {
+    font-size: 24px;
+    font-weight: 200;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+/* hero */
+.hero-title {
+    font-size: 70px;
+    font-weight: 200;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.hero-words {
+    font-size: 21px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.hero-button {
+    font-size: 24px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+    height: 34px
+}
+
+.hero-text {
+    font-size: 24px;
+    font-weight: 200;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.hero-button-buy {
+    font-size: 16px;
+    font-weight: 900;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+/* menu */
+.menu-title {
+    font-size: 64px;
+    font-weight: 100;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.menu-subtitle {
+    font-size: 25.92px;
+    font-weight: 800;
+    /* color: #fff; */
+    display: inline-block;
+    height: 31.8px;
+}
+
+.menu-button {
+    font-size: 25.92px;
+    font-weight: 800;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.quality-title {
+    font-size: 64px;
+    font-family: Italiana;
+    /* color: #fff; */
+    display: inline-block;
+    height: 75px;
+}
+
+/* quality */
+.quality-text {
+    font-size: 24px;
+    font-weight: 500;
+    /* color: #fff; */
+    display: inline-block;
+    height: 92px;
+}
+
+/* tr-bk */
+.tr-bk-title {
+    font-size: 48px;
+    font-family: Italiana;
+    color: #d9d9d9;
+    display: inline-block;
+}
+
+.tr-bk-subtitle {
+    font-size: 24px;
+    display: inline-block;
+    font-family: Inter;
+    /* color: #fff; */
+}
+
+/* WHW */
+.WHW-title {
+    font-size: 48px;
+    font-family: Italiana;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.WHW-subtitle {
+    font-size: 40px;
+    /* color: #fff; */
+    display: inline-block;
+    height: 44px;
+}
+
+.WHW-link {
+    font-size: 24px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.WHW-text {
+    font-size: 24px;
+    font-weight: 200;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+/* footer */
+.footer-title {
+    font-size: 40px;
+    font-weight: 200;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.footer-words {
+    font-size: 20px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.footer-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.footer-text {
+    font-size: 24px;
+    font-weight: 300;
+    /* color: #fff; */
+    display: inline-block;
+}
+
+.footer-info {
+    font-size: 20px;
+    font-weight: 100;
+    /* color: #fff; */
+    display: inline-block;
+}
