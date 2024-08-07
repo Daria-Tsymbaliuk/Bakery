@@ -4,6 +4,12 @@
     --white-color:#ffffff;
     --backround-color: #202023 ;
     --black-color:#000;
+    --btns-bcg-color:#B47B48;
+    --btns-buy-bcg-color:#C85312;
+    --ol-bcg-color: #616161;
+    --li-hover-bcg-color:#EBAD51;
+    --accent-color: #2196f3;
+    --main-bcg-color: #272727;
 
 }
 
@@ -12,34 +18,85 @@ body {
     background-color: var(--backround-color);
     color: var(--white-color);
 }
-
+.container {
+    max-width: 1758px; 
+    padding: 0 30px;
+    margin: 0 auto;
+}
 /* header */
+.header {
+    /* background-color:#20202363;
+    position:fixed; */
+}
+.header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.header-list li:nth-child(1){
+    margin-left: 156px;
+}
 .header-link {
     font-size: 24px;
     font-weight: 200;
     display: inline-block;
+    color: var(--white-color);
+   
+}
+
+.header-link:hover {
+    color: var(--accent-color);
+   
 }
 
 /* hero */
+.hero {
+    background-image: url(../pictures/Backround-header-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 36px;
+}
 .hero-title {
     font-size: 70px;
     font-weight: 200;
     display: inline-block;
+    margin: 0 724px 22px 146px;
 }
 
 .hero-words {
     font-size: 21px;
     font-weight: 300;
     display: inline-block;
+    margin-right: 700.75px;
+    margin: 0 700.75px 49px 160px ;
+    
 }
 
 .hero-button {
     font-size: 24px;
     font-weight: 300;
     display: inline-block;
-    height: 34px
+    margin: 0 0 125px 157px;
+    padding: 8px 34px 8px 34px;
+    border-radius: 17px;
+    background-color: var(--btns-bcg-color);
+    height: 57px;
+    color: var(--white-color) ;
+    
 }
-
+.hero-list {
+    display: flex;
+    gap: 104px;
+    margin-left: 160px;
+}
+.hero-item {
+    background-color: var(--main-bcg-color);
+    display: flex;
+    width: 310px;
+    height: 225px;
+    flex-wrap: wrap;
+}
 .hero-text {
     font-size: 24px;
     font-weight: 200;
@@ -56,13 +113,56 @@ body {
     font-size: 16px;
     font-weight: 900;
     display: inline-block;
+    padding: 10px 22px 5px 22px;
 }
 
 /* menu */
+.menu {
+    text-align: center;
+    padding-bottom: 73px;
+}
 .menu-title {
     font-size: 64px;
     font-weight: 100;
     display: inline-block;
+    margin-bottom: 18px;
+}
+.menu-list {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;  
+    /* column-gap: 10px; */
+    padding: 0; 
+   
+}
+.menu-item {
+    flex-basis: calc((100% - 207px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outline {
+    outline: solid var(--white-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.menu-img {
+  margin: 14px 14px 0px 20px;
+}
+
+.menu-img-3 {
+    margin: 0px 65px;
+    height: 250px;
+}
+
+.menu-img-4 {
+    margin: 0px 65px;
+    height: 250px;
 }
 
 .menu-subtitle {
@@ -76,16 +176,54 @@ body {
     font-size: 25.92px;
     font-weight: 800;
     display: inline-block;
+    border-radius: 17px;
+    background-color: var(--btns-bcg-color);
+    color: var(--white-color);
+    padding: 5px 43px;
+    margin-bottom: 7px;
+    height: 41px;
 }
+/* quality */
 
 .quality-title {
     font-size: 64px;
     font-family: Italiana;
     display: inline-block;
     height: 75px;
+    margin: 90px 0px 0px 594px;
+}
+.quality-list {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(32, 32, 35, 0.359),
+        rgba(32, 32, 35, 0)
+      ),
+      url(../pictures/Quality-our-bekary.png);
 }
 
-/* quality */
+.quality-list li:nth-child(1){
+    margin-right: 35.9px;
+}
+
+.quality-list li:nth-child(2){
+    margin-right: 89.9px;
+    margin-top: 84px;
+}
+
+.quality-list li:nth-child(3){
+    margin-top: 123px;
+}
+.recipe-list {
+    background-color: var(--ol-bcg-color);
+    /* width: 197.5px; */
+}
+.recipe-item {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter;
+}
 .quality-text {
     font-size: 24px;
     font-weight: 500;
@@ -94,39 +232,98 @@ body {
 }
 
 /* advantages */
+.advantages {
+    background-image: linear-gradient(
+        to right ,
+        #000000 ,
+        #03030300
+        
+    ),
+    url(../pictures/Backround-advantages.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .advantages-title {
     font-size: 48px;
     font-family: Italiana;
     color: #d9d9d9;
     display: inline-block;
+    margin: 55px 0px 132px 165px;
+}
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    gap: 285px;
 }
 
+.advantages-list li:nth-child(1)::before {
+    content: " ";
+    display: inline-block;
+    width: 218.25px;
+    height: 183px;
+    background-image: url(../pictures/Frame-3.svg) ;
+    margin-left:100px ;
+}
+
+.advantages-list li:nth-child(2)::before {
+    content: " ";
+    display: inline-block;
+    width: 218.25px;
+    height: 183px;
+    background-image: url(../pictures/Frame-1.svg) ;
+}
+
+.advantages-list li:nth-child(3)::before {
+    content: " ";
+    display: inline-block;
+    width: 218.25px;
+    height: 183px;
+    background-image: url(../pictures/Frame-4.svg) ;
+}
+.advantages-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+}
 .advantages-subtitle {
     font-size: 24px;
     display: inline-block;
     font-family: Inter;
+    margin-top: 10px;
+
 }
 
-/* WHW */
-.WHW-title {
+/* adress */
+
+.adress-title {
     font-size: 48px;
     font-family: Italiana;
     display: inline-block;
+    margin: 66px 0 44px 160.66px;
 }
 
-.WHW-subtitle {
+.adress-subtitle {
     font-size: 40px;
     display: inline-block;
     height: 44px;
 }
 
-.WHW-link {
+.adress-link {
     font-size: 24px;
     font-weight: 300;
     display: inline-block;
+    color: var(--white-color);
 }
 
-.WHW-text {
+.adress-link:hover{
+    color: var(--accent-color);
+}
+
+
+.adress-text {
     font-size: 24px;
     font-weight: 200;
     display: inline-block;
