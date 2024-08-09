@@ -119,8 +119,31 @@ body {
     font-weight: 900;
     display: inline-block;
     padding: 10px 22px 5px 22px;
+    margin: 0 32px 44px 39px;
+    background-color: var(--btns-buy-bcg-color);
+    color: var(--white-color);
 }
-
+.hero-text-1 {
+    margin: 51px 0 0 15px;
+}
+.hero-subtitle-1 {
+    margin: 0 10px 20px 0;
+}
+.hero-button-buy-1 {
+    margin: 0 17px 44px 0;
+}
+.hero-img-2 {
+    margin-top: 10px;
+}
+.hero-text-2 {
+    margin: 51px 23px 4px 0;
+}
+.hero-subtitle-2 {
+    margin: 0 10px 20px 0;
+}
+.hero-button-buy-2 {
+    margin: 0 31px 44px 0;
+}
 /* menu */
 .menu {
     text-align: center;
@@ -200,36 +223,29 @@ body {
 .quality-list {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    align-self: start;
     background-image: linear-gradient(
         to right,
         rgba(32, 32, 35, 0.359),
         rgba(32, 32, 35, 0)
       ),
       url(../pictures/Quality-our-bekary.png);
+     
 }
-
-/* .quality-list li:nth-child(1){
-    margin-right: 35.9px;
-}
-
-.quality-list li:nth-child(2){
-    margin-right: 89.9px;
-    margin-top: 84px;
-}
-
-.quality-list li:nth-child(3){
-    margin-top: 123px;
-} */
 .recipe-list {
     background-color: var(--ol-bcg-color);
     /* width: 197.5px; */
     padding: 0;
     margin: 0;
+    padding-left: 40px; 
+    padding-bottom: 50px ;
 }
 .recipe-item {
     font-size: 24px;
     font-weight: 500;
     font-family: Inter;
+    padding-left: 14px ;
 }
 .quality-text {
     font-size: 24px;
