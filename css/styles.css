@@ -96,19 +96,22 @@ body {
     width: 310px;
     height: 225px;
 }
-/* .hero-wrap {
+.hero-wrap {
 
-} */
+} 
 .hero-text {
     font-size: 24px;
     font-weight: 200;
     display: inline-block;
+    margin: 51px 7px 16px 26px ;
+
 }
 
 .hero-subtitle {
     font-size: 16px;
     font-weight: 500;
     display: inline-block;
+    margin: 0 12px 42px 8px;
 }
 
 .hero-button-buy {
