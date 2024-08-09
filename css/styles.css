@@ -95,8 +95,10 @@ body {
     display: flex;
     width: 310px;
     height: 225px;
-    flex-wrap: wrap;
 }
+/* .hero-wrap {
+
+} */
 .hero-text {
     font-size: 24px;
     font-weight: 200;
@@ -203,7 +205,7 @@ body {
       url(../pictures/Quality-our-bekary.png);
 }
 
-.quality-list li:nth-child(1){
+/* .quality-list li:nth-child(1){
     margin-right: 35.9px;
 }
 
@@ -214,10 +216,12 @@ body {
 
 .quality-list li:nth-child(3){
     margin-top: 123px;
-}
+} */
 .recipe-list {
     background-color: var(--ol-bcg-color);
     /* width: 197.5px; */
+    padding: 0;
+    margin: 0;
 }
 .recipe-item {
     font-size: 24px;
@@ -227,8 +231,6 @@ body {
 .quality-text {
     font-size: 24px;
     font-weight: 500;
-    display: inline-block;
-    height: 92px;
 }
 
 /* advantages */
