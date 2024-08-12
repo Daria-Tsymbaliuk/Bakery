@@ -8,7 +8,6 @@
     --btns-buy-bcg-color:#C85312;
     --ol-bcg-color: #616161;
     --li-hover-bcg-color:#EBAD51;
-    --accent-color: #2196f3;
     --main-bcg-color: #272727;
 
 }
@@ -19,9 +18,9 @@ body {
     color: var(--white-color);
 }
 .container {
-    max-width: 1758px; 
-    padding: 0 30px;
+    width: 1110px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 /* header */
 .header {
@@ -30,22 +29,17 @@ body {
 }
 .header-list {
     display: flex;
-    flex-direction: row;
     gap: 30px;
-}
-.header-list li:nth-child(1){
-    margin-left: 156px;
 }
 .header-link {
     font-size: 24px;
     font-weight: 200;
-    display: inline-block;
     color: var(--white-color);
    
 }
 
 .header-link:hover {
-    color: var(--accent-color);
+    color: var(--btns-buy-bcg-color);
    
 }
 
@@ -60,16 +54,13 @@ body {
 .hero-title {
     font-size: 70px;
     font-weight: 200;
-    display: inline-block;
-    margin: 0 724px 22px 146px;
 }
 
 .hero-words {
     font-size: 21px;
     font-weight: 300;
-    display: inline-block;
-    margin-right: 700.75px;
-    margin: 0 700.75px 49px 160px ;
+    width: 570.25;
+    margin-bottom: 33px;
     
 }
 
@@ -77,18 +68,18 @@ body {
     font-size: 24px;
     font-weight: 300;
     display: inline-block;
-    margin: 0 0 125px 157px;
-    padding: 8px 34px 8px 34px;
+    padding: 16px 34px;
     border-radius: 17px;
     background-color: var(--btns-bcg-color);
     height: 57px;
     color: var(--white-color) ;
+    margin-bottom: 125px;
     
 }
 .hero-list {
     display: flex;
     gap: 104px;
-    margin-left: 160px;
+    justify-content: space-between;
 }
 .hero-item {
     background-color: var(--main-bcg-color);
@@ -97,7 +88,12 @@ body {
     height: 225px;
 }
 .hero-wrap {
-
+    padding-top: 0px;
+    padding-bottom: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 } 
 .hero-text {
     font-size: 24px;
@@ -111,7 +107,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     display: inline-block;
-    margin: 0 12px 42px 8px;
+    margin: 0 12px 0 8px;
 }
 
 .hero-button-buy {
@@ -119,28 +115,42 @@ body {
     font-weight: 900;
     display: inline-block;
     padding: 10px 22px 5px 22px;
-    margin: 0 32px 44px 39px;
+    margin: 32px 32px 44px 39px;
     background-color: var(--btns-buy-bcg-color);
     color: var(--white-color);
 }
-.hero-text-1 {
-    margin: 51px 0 0 15px;
+.hero-preice {
+    margin: 51px 65px 0 15px;
 }
-.hero-subtitle-1 {
+.hero-name {
     margin: 0 10px 20px 0;
+    height: 40px;
+    width: 90px;
 }
-.hero-button-buy-1 {
-    margin: 0 17px 44px 0;
+
+.hero-btn-buy {
+    margin-right: 50px;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 10px 22px 5px 22px;
+    background-color: var(--btns-buy-bcg-color);
+    color: var(--white-color);
 }
-.hero-img-2 {
+.hero-img-blackberry-pie {
     margin-top: 10px;
 }
-.hero-text-2 {
+.hero-value {
     margin: 51px 23px 4px 0;
 }
-.hero-subtitle-2 {
+.hero-nickname{
     margin: 0 10px 20px 0;
+   
 }
+
 .hero-button-buy-2 {
     margin: 0 31px 44px 0;
 }
@@ -212,7 +222,6 @@ body {
     height: 41px;
 }
 /* quality */
-
 .quality-title {
     font-size: 64px;
     font-family: Italiana;
@@ -231,6 +240,7 @@ body {
         rgba(32, 32, 35, 0)
       ),
       url(../pictures/Quality-our-bekary.png);
+      padding-bottom: 44px ;
      
 }
 .recipe-list {
@@ -311,7 +321,6 @@ body {
 }
 .advantages-subtitle {
     font-size: 24px;
-    display: inline-block;
     font-family: Inter;
     margin-top: 10px;
 
@@ -322,16 +331,28 @@ body {
 .adress-title {
     font-size: 48px;
     font-family: Italiana;
-    display: inline-block;
-    margin: 66px 0 44px 160.66px;
+    margin: 66px 0 14px 160.66px;
 }
-
+.adress-wrap {
+    display: flex;
+    flex-direction: row;
+}
 .adress-subtitle {
     font-size: 40px;
-    display: inline-block;
-    height: 44px;
+}
+.adress-list {
+    display: flex;
+    flex-direction: column;
+   
+}
+.adress-list li:nth-child(1){
+    margin-top: 49px;
+    margin-bottom: 67px;
 }
 
+.adress-list li:nth-child(2){
+    margin-bottom: 40px;
+}
 .adress-link {
     font-size: 24px;
     font-weight: 300;
@@ -340,7 +361,7 @@ body {
 }
 
 .adress-link:hover{
-    color: var(--accent-color);
+    color: var(--btns-buy-bcg-color);
 }
 
 
@@ -351,32 +372,32 @@ body {
 }
 
 /* footer */
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .footer-title {
     font-size: 40px;
     font-weight: 200;
-    display: inline-block;
 }
 
 .footer-words {
     font-size: 20px;
     font-weight: 300;
-    display: inline-block;
 }
 
 .footer-subtitle {
     font-size: 24px;
     font-weight: 300;
-    display: inline-block;
 }
 
 .footer-text {
     font-size: 24px;
     font-weight: 300;
-    display: inline-block;
 }
 
 .footer-info {
     font-size: 20px;
     font-weight: 100;
-    display: inline-block;
 }
