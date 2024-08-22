@@ -169,7 +169,7 @@ body {
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;  
-    /* column-gap: 10px; */
+    column-gap: 197px;
     padding: 0; 
    
 }
@@ -222,18 +222,20 @@ body {
     height: 41px;
 }
 /* quality */
+.quality {
+    padding-top: 90px;
+}
 .quality-title {
     font-size: 64px;
     font-family: Italiana;
-    display: inline-block;
-    height: 75px;
-    margin: 90px 0px 0px 594px;
+    margin: 0px 0px 0px 450px;
+    white-space: nowrap;
 }
 .quality-list {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-self: start;
+    justify-content: space-between; 
+    align-items: center;     
+    height: 650px;   
     background-image: linear-gradient(
         to right,
         rgba(32, 32, 35, 0.359),
@@ -244,18 +246,19 @@ body {
      
 }
 .recipe-list {
+    padding: 5px 0px 5px 30px;
     background-color: var(--ol-bcg-color);
-    /* width: 197.5px; */
-    padding: 0;
-    margin: 0;
-    padding-left: 40px; 
-    padding-bottom: 50px ;
+}
+.quality-list li:nth-child(1){
+    align-self: flex-start;
+}
+.quality-list li:nth-child(3){
+    align-self: flex-end;
 }
 .recipe-item {
     font-size: 24px;
     font-weight: 500;
     font-family: Inter;
-    padding-left: 14px ;
 }
 .quality-text {
     font-size: 24px;
@@ -273,43 +276,40 @@ body {
     url(../pictures/Backround-advantages.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 57px;
 }
 .advantages-title {
     font-size: 48px;
     font-family: Italiana;
     color: #d9d9d9;
-    display: inline-block;
-    margin: 55px 0px 132px 165px;
+    width: 735px;
+    margin-bottom: 132px;
 }
 .advantages-list {
     display: flex;
-    justify-content: center;
-    gap: 285px;
+    justify-content: space-between;
+    
 }
 
 .advantages-list li:nth-child(1)::before {
-    content: " ";
-    display: inline-block;
-    width: 218.25px;
-    height: 183px;
     background-image: url(../pictures/Frame-3.svg) ;
     margin-left:100px ;
 }
 
 .advantages-list li:nth-child(2)::before {
-    content: " ";
-    display: inline-block;
-    width: 218.25px;
-    height: 183px;
     background-image: url(../pictures/Frame-1.svg) ;
 }
 
 .advantages-list li:nth-child(3)::before {
-    content: " ";
-    display: inline-block;
-    width: 218.25px;
-    height: 183px;
     background-image: url(../pictures/Frame-4.svg) ;
+}
+.advantages-item::before {
+    content: "";
+    display: block;
+    width: 219px;
+    height: 183px;
+    background-repeat: no-repeat;
 }
 .advantages-item {
     display: flex;
@@ -317,7 +317,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 52px;
 }
 .advantages-subtitle {
     font-size: 24px;
