@@ -82,6 +82,7 @@ body {
 }
 .hero-button:hover{
     background-color: var(--btns-buy-bcg-color);
+    transition: all 0.3s ease;
 }
 
 .hero-thumb {
@@ -107,6 +108,7 @@ body {
 .hero-item:hover{
     background: linear-gradient(81.4deg, #0000004b, rgba(0, 0, 0, 0));
     background-color: var(--li-hover-bcg-color);
+    transition: all 0.3s ease;
 
 }
 .hero-wrap {
@@ -143,7 +145,7 @@ body {
 /* menu */
 .menu {
     text-align: center;
-    padding-bottom: 21px 0px 73px 0px ;
+    padding: 21px 0 73px 0;
 }
 .menu-title {
     font-size: 64px;
@@ -197,6 +199,7 @@ body {
 
 .menu-button:hover{
     background-color: var(--btns-buy-bcg-color);
+    transition: all 0.3s ease;
 }
 /* quality */
 .quality {
