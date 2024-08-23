@@ -18,19 +18,19 @@
             <nav class="header-nav">
                 <ul class="header-list">
                     <li class="header-item"> 
-                        <a href="#" class="header-link">About us</a>
+                        <a href="#" class="header-link">About us<span class="underline"></span></a>
                     </li>
                     <li class="header-item"> 
-                        <a href="#" class="header-link">Delivery</a>
+                        <a href="#" class="header-link">Delivery<span class="underline"></span></a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header-link">Menu</a>
+                        <a href="#" class="header-link">Menu<span class="underline"></span></a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header-link">Contacts</a>
+                        <a href="#" class="header-link">Contacts<span class="underline"></span></a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header-link">Reviews</a>
+                        <a href="#" class="header-link">Reviews<span class="underline"></span></a>
                     </li>
                 </ul>
             </nav>
@@ -39,7 +39,7 @@
     <!-- main -->
     <main class="main">
         <!-- hero -->
-       <section class="hero">
+       <section class="hero" id="hero">
         <div class="container">
             <h1 class="hero-title">TRADITIONAL <br/> ARTISAX BAKERY</h1>
             <p class="hero-words">
@@ -91,20 +91,20 @@
                 </li>
                 <li class="menu-item">
                    <div class="outline">
-                    <img src="./pictures/Bekary.png" alt="" class="menu-img-2">
+                    <img src="./pictures/Bekary.png" alt="" class="menu-img">
                    </div>
                     <button type="button" class="menu-button">Order</button>
                 </li>
                 <li class="menu-item">
                    <div class="outline">
-                    <img src="./pictures/cakes-&-capcakes.png" alt="" class="menu-img-3">
+                    <img src="./pictures/cakes-&-capcakes.png" alt="" class="menu-img">
                     <h3 class="menu-subtitle">Cakes & Capcakes</h3>
                    </div>
                     <button type="button" class="menu-button">Order</button>
                 </li>
                 <li class="menu-item">
                    <div class="outline">
-                    <img src="./pictures/coockies-&-petzels.png" alt="" class="menu-img-4">
+                    <img src="./pictures/coockies-&-petzels.png" alt="" class="menu-img">
                     <h3 class="menu-subtitle">Coockies&Pretzels</h3>
                    </div>
                     <button type="button" class="menu-button">Order</button>
@@ -198,7 +198,7 @@
         </div>
         <div class="adress-thumb">
             <h3 class="adress-subtitle">When</h3>
-           <p class="adress-text">with 8:30 to 20:30</p>
+           <p class="adress-text">with 8:30 to<br>20:30</p>
         </div>
    </section>
    <section class="footer"> 
@@ -235,6 +235,14 @@
    </section>
    </div>
     </footer>
+    <button id="backToTopBtn" aria-label="Наверх">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring__circle" stroke="tomato" stroke-width="4" fill="transparent" r="28" cx="30" cy="30"/>
+        </svg>
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 2L3.293 10.707l1.414 1.414L11 7.828V22h2V7.828l6.293 4.293 1.414-1.414z"/>
+        </svg>
+    </button>
     <script src="./script.js"></script>
 </body>
 
