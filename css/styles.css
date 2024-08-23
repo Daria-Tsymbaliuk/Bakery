@@ -27,6 +27,10 @@ body {
     /* background-color:#20202363;
     position:fixed; */
 }
+.header-nav {
+    position: absolute;
+     margin-top: 55px;
+}
 .header-list {
     display: flex;
     gap: 30px;
@@ -50,16 +54,19 @@ body {
     background-position: center;
     background-size: cover;
     padding-bottom: 36px;
+    padding-top: 155px;
 }
 .hero-title {
     font-size: 70px;
     font-weight: 200;
+    text-transform: uppercase; 
+    margin-bottom:  22px;
 }
 
 .hero-words {
     font-size: 21px;
     font-weight: 300;
-    width: 570.25;
+    width: 570px;
     margin-bottom: 33px;
     
 }
@@ -67,16 +74,69 @@ body {
 .hero-button {
     font-size: 24px;
     font-weight: 300;
-    display: inline-block;
     padding: 16px 34px;
     border-radius: 17px;
     background-color: var(--btns-bcg-color);
-    height: 57px;
     color: var(--white-color) ;
     margin-bottom: 125px;
     
 }
+
+.hero-thumb {
+    width: 225px;
+    height: 225px;
+}
+.hero-thumb > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .hero-list {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-item {
+    background-color: var(--main-bcg-color);
+    display: flex;
+    width: 310px;
+    height: 225px;
+}
+.hero-item:hover{
+    background: linear-gradient(81.4deg, #0000004b, rgba(0, 0, 0, 0));
+    background-color: var(--li-hover-bcg-color);
+
+}
+.hero-wrap {
+    padding-top: 45px;
+}
+.hero-preice {
+    margin-bottom: 13px;
+    font-size: 24px;
+}
+.hero-value {
+    white-space: nowrap;
+}
+.hero-subtitle {
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hero-box {
+    display: block;
+    font-size: 20px;
+}
+.hero-button-buy {
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--btns-buy-bcg-color);
+    color: var(--white-color);
+}
+
+/* .hero-list {
     display: flex;
     gap: 104px;
     justify-content: space-between;
@@ -153,7 +213,7 @@ body {
 
 .hero-button-buy-2 {
     margin: 0 31px 44px 0;
-}
+} */
 /* menu */
 .menu {
     text-align: center;
@@ -225,6 +285,14 @@ body {
 .quality {
     padding-top: 90px;
 }
+.quality-bg-container{
+    background-image: linear-gradient(
+        to right,
+        rgba(32, 32, 35, 0.8),
+        rgba(32, 32, 35, 0.2)
+      ),
+      url(../pictures/Quality-our-bekary.png);
+}
 .quality-title {
     font-size: 64px;
     font-family: Italiana;
@@ -236,15 +304,8 @@ body {
     justify-content: space-between; 
     align-items: center;     
     height: 650px;   
-    background-image: linear-gradient(
-        to right,
-        rgba(32, 32, 35, 0.359),
-        rgba(32, 32, 35, 0)
-      ),
-      url(../pictures/Quality-our-bekary.png);
-      padding-bottom: 44px ;
-     
 }
+
 .recipe-list {
     padding: 5px 0px 5px 30px;
     background-color: var(--ol-bcg-color);
@@ -350,6 +411,21 @@ body {
     font-size: 48px;
     font-family: Italiana;
 }
+.mode-map-btn {
+    display: block;
+    font-family: Inter;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+  }
+.mode-map-btn:hover {
+    background-color: var(--acent-hover-color);
+  }
 iframe {
     margin-right: 100px;
 }

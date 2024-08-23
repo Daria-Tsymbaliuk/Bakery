@@ -51,24 +51,26 @@
                 <li class="hero-item">
                     <img src="./pictures/more-coockies.png" alt="" class="hero-img" width="162px">
                     <div class="hero-wrap">
-                        <p class="hero-text">$8.00(kg)</p>
-                        <h2 class="hero-subtitle">American Cockie</h2>
+                        <p class="hero-preice">$8.00(kg)</p>
+                        <h2 class="hero-subtitle hero-text ">American Cockie</h2>
                         <button type="button" class="hero-button-buy">BUY</button>
                     </div>
                 </li>
                 <li class="hero-item">
                     <img src="./pictures/croissant.png" alt="" class="hero-img" width="205px">
                     <div class="hero-wrap">
-                        <p class="hero-text hero-preice">$4.00</p>
-                        <h2 class="hero-subtitle hero-name">Crushed with chockolate</h2>
-                        <button type="button" class="hero-btn-buy">BUY</button>
+                        <p class="hero-preice">$4.00</p>
+                        <h2 class="hero-subtitle">Crushed with chockolate</h2>
+                        <button type="button" class="hero-button-buy">BUY</button>
                     </div>
                 </li>
                 <li class="hero-item">
-                    <img src="./pictures/blackberry-pie.png" alt="" class="hero-img-blackberry-pie" width="180px" height="190px">
+                    <div class="hero-thumb">
+                        <img src="./pictures/blackberry-pie.png" alt="" class="hero-img-blackberry-pie" width="235px" >
+                    </div>
                     <div class="hero-wrap">
-                        <p class="hero-text hero-value">For piece $4.00</p>
-                        <h2 class="hero-subtitle hero-nickname">Blackberry pie</h2>
+                        <p class="hero-preice"><span class="hero-box">For piece</span>$4.00</p>
+                        <h2 class="hero-subtitle hero-value">Blackberry pie</h2>
                         <button type="button" class="hero-button-buy ">BUY</button>
                     </div>
                 </li>
@@ -76,7 +78,7 @@
         </div> 
        </section>
        <!-- menu -->
-       <section class="menu">
+       <section class="menu" id="menu">
         <div class="container">
             <h2 class="menu-title">Menu</h2>
              <ul class="menu-list">
@@ -112,6 +114,7 @@
        </section>
        <!-- quality -->
        <section class="quality">
+        <div class="quality-bg-container">
         <div class="container">
             <h2 class="quality-title">Quality our bekary</h2>
             <ul class="quality-list">
@@ -144,6 +147,7 @@
               </li>
             </ul>
         </div>
+    </div>
        </section>
        <!--  advantages -->
        <section class="advantages">
@@ -170,7 +174,19 @@
     <section class="adress">
         <div class="adress-wrap">
             <h4 class="adress-title">Where</h4> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.827701247774!2d30.52005921945035!3d50.44759142544607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sro!4v1723211154263!5m2!1sru!2sro" width="535.21" height="487" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="mode-map-btn" type="button" id="mode-map-btn">
+                Switch Theme
+              </button>
+            <iframe 
+            id="map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.827701247774!2d30.52005921945035!3d50.44759142544607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sro!4v1723211154263!5m2!1sru!2sro" 
+            width="600" 
+            height="487" 
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
         <div class="adress-box"> 
             <h3 class="adress-subtitle">How</h3>
@@ -219,6 +235,7 @@
    </section>
    </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
