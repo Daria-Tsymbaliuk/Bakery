@@ -411,23 +411,28 @@ body {
     font-size: 48px;
     font-family: Italiana;
 }
+.adress-wrap button {
+  margin-right: 550px;
+}
 .mode-map-btn {
     display: block;
     font-family: Inter;
     padding: 10px 20px;
-    margin-bottom: 10px;
     border-radius: 17px;
     font-size: 18px;
     font-weight: 400;
     color: var(--white-color);
-    background-color: var(--accent-color);
+    background-color: var(--btns-bcg-color);
     transition: all 0.3s ease;
+    margin: 0 auto;
+    
   }
 .mode-map-btn:hover {
-    background-color: var(--acent-hover-color);
+    background-color: var(--btns-buy-bcg-color);
   }
 iframe {
     margin-right: 100px;
+    margin-top: 10px;
 }
 .adress-subtitle {
     font-size: 40px;
