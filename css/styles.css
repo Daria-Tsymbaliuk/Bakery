@@ -37,7 +37,15 @@ body {
     color: var(--white-color);
     position: relative; 
 }
-
+.header-link:hover.header-link::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--acent-hover-color);
+    border-radius: 2px;
+}
 .underline {
     content: '';
     position: absolute;
@@ -124,6 +132,7 @@ body {
 .hero-preice {
     margin-bottom: 13px;
     font-size: 24px;
+    font-weight: 200;
 }
 .hero-value {
     white-space: nowrap;
@@ -228,7 +237,7 @@ body {
 /* menu */
 .menu {
     text-align: center;
-    padding-bottom: 73px;
+    padding-bottom: 21px 0px 73px 0px;
 }
 .menu-title {
     font-size: 64px;
@@ -240,17 +249,16 @@ body {
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;  
-    column-gap: 197px;
+    column-gap: 198px;
     row-gap: 10px;
 }
 .menu-item  {
-    flex-basis: calc((100% - 197px) / 2); 
+    flex-basis: calc((100% - 198px) / 2); 
     display: flex; 
     flex-direction: column; 
     align-items: center;
 } 
 .outline {
-    margin-bottom: 7px; 
     height: 229px; 
     width: 328px; 
     border: 1px solid var(--white-color);
@@ -267,6 +275,7 @@ body {
     font-size: 26px; 
     position: relative;
     bottom: 30px;
+    
 }
 .menu-button {
     font-size: 25.92px;
@@ -275,11 +284,11 @@ body {
     background-color: var(--btns-bcg-color);
     color: var(--white-color);
     padding: 5px 43px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .menu-button:hover{
-    background-color: #C85312;
+    background-color: var(--btns-buy-bcg-color);
 }
 /* quality */
 .quality {
@@ -290,8 +299,9 @@ body {
         to right,
         rgba(32, 32, 35, 0.8),
         rgba(32, 32, 35, 0.2)
-      ),
-      url(../pictures/Quality-our-bekary.png);
+    ),
+    url(../pictures/Quality-our-bekary.png);
+    padding-bottom: 47px;
 }
 .quality-title {
     font-size: 64px;
@@ -305,7 +315,6 @@ body {
     align-items: center;     
     height: 650px;   
 }
-
 .recipe-list {
     padding: 5px 0px 5px 30px;
     background-color: var(--ol-bcg-color);
@@ -462,7 +471,9 @@ iframe {
 .footer {
     display: flex;
     flex-direction: row;
-    gap: 77.32px;
+    gap: 77px;
+    padding-top: 40px;   
+    padding-bottom: 86px;
 }
 .footer-wrap {
    display: flex;
@@ -474,10 +485,14 @@ iframe {
     gap: 30px;
     flex-wrap: wrap;
     gap: 141.52px;
+    flex-grow: 1;  
+    justify-content: space-between;
 }
 .footer-title {
     font-size: 40px;
     font-weight: 200;
+    margin-bottom: 16px;
+    white-space: nowrap;
 }
 
 .footer-words {
@@ -488,10 +503,10 @@ iframe {
 .footer-subtitle {
     font-size: 24px;
     font-weight: 300; 
+    margin-bottom: 41px;
 }
-.footer-list {
-    display: flex;
-    flex-direction: column;
+.footer-item {
+    margin-bottom: 4px;
 }
 .footer-text {
     font-size: 24px;
@@ -500,6 +515,7 @@ iframe {
 .footer-info {
     font-size: 20px;
     font-weight: 100;
+    margin-left: 60px;
 }
 #backToTopBtn{
     display: none;
