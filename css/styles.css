@@ -389,14 +389,12 @@ iframe {
 .footer-wrap {
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
 
 }
 .footer-box {
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    gap: 141.52px;
-    flex-grow: 1;  
+    flex-grow: 1;
     justify-content: space-between;
 }
 .footer-title {
