@@ -386,7 +386,6 @@ iframe {
     display: flex;
     gap: 95px;
     padding-top: 40px;   
-    padding-bottom: 86px;
     flex-wrap: wrap;
 }
 .footer-wrap {
@@ -397,8 +396,6 @@ iframe {
 }
 .footer-box {
     display: flex;
-    gap: 100px;
-    flex-direction: row; 
     flex-grow: 1;
     justify-content: space-between;
 }
