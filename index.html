@@ -46,7 +46,7 @@
                 Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy<br>text ever since the 1500s, when an unknown printer took<br>a galley of type and scrambled it to make a type<br>specimen book. It has survived not only five centuries,<br>but also the leap into electronic typesetting, remaining<br>essentially unchanged. 
             </p>
-            <button type="button" class="hero-button">SHOP NOW</button>
+            <button type="button" class="hero-button" data-modal-open>SHOP NOW</button>
             <ul class="hero-list">
                 <li class="hero-item">
                     <img src="./pictures/more-coockies.png" alt="coockies" class="hero-img" width="162">
@@ -242,7 +242,12 @@
             <path d="M12 2L3.293 10.707l1.414 1.414L11 7.828V22h2V7.828l6.293 4.293 1.414-1.414z"/>
         </svg>
     </button>
-    <script src="./script.js"></script>
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, illo! Provident id totam vitae hic ratione corrupti ab officiis culpa necessitatibus harum a molestias nisi rerum, sed consectetur nesciunt voluptas.</p>
+            <button type="button" class="btn-close" data-modal-close>X</button>
+        </div>
+     </div>
 </body>
-
+    <script src="./script.js"></script>
 </html>
